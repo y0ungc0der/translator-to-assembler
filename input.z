@@ -1,0 +1,30 @@
+a = 2 + 8;
+b = 3;
+d = -4;
+c =  b + 3 + 2 + d;
+while(c < b)
+{
+d = 47;
+print d;
+}
+
+b = 3 * 7;
+a = 5;
+c = a;
+while(c >= b)
+{ 
+d = 48;
+d = d / 4;
+print a;
+}
+
+if(d < b)
+{
+print b;
+return d;
+}
+else
+{
+print a;
+}
+return (0);

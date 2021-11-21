@@ -1,0 +1,66 @@
+	push  2
+	push  8
+	add
+	pop   a
+	push  3
+	pop   b
+	push  4
+	neg
+	pop   d
+	push  b
+	push  3
+	add
+	push  2
+	add
+	push  d
+	add
+	pop   c
+L000:
+	push  c
+	push  b
+	compLT
+	jz	L001
+	push  47
+	pop   d
+	push  d
+	print
+	jmp	L000
+L001:
+	push  3
+	push  7
+	mul
+	pop   b
+	push  5
+	pop   a
+	push  a
+	pop   c
+L002:
+	push  c
+	push  b
+	compGE
+	jz	L003
+	push  48
+	pop   d
+	push  d
+	push  4
+	div
+	pop   d
+	push  a
+	print
+	jmp	L002
+L003:
+	push  d
+	push  b
+	compLT
+	jz	L004
+	push  b
+	print
+	push  d
+	ret
+	jmp	L005
+L004:
+	push  a
+	print
+L005:
+	push  0
+	ret
